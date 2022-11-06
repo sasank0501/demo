@@ -1,0 +1,355 @@
+<!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="demo.css">
+ 
+  <title>Portfolio</title>
+</head>
+<body>
+<!-- Navbar section -->
+  <nav id="navbar">
+    <div class="container">
+      <a href="#"><h3>LoopKitchen</h3></a>
+      <ul>
+        <li><a href="#welcome-section" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <!-- <li><a href="#skills">Skills</a></li> -->
+        <li><a href="#services">Services</a></li>
+        <!-- <li><a href="#projects">Portfolio</a></li> -->
+        <li><a href="#contacts">Contact Us</a></li>
+      </ul>
+      
+      <div class="controls">
+      <div class="control contro-1 active-btn">
+        <i class="fa-solid fa-house-chimney"></i>
+      </div>
+      <div class="control contro-1 active-btn">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <div class="control contro-1 active-btn">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+      </div>
+      <div class="control contro-1 active-btn">
+        <i class="fa-solid fa-address-card"></i>
+      </div>
+      <div class="control contro-1 active-btn">
+        <i class="fa-solid fa-briefcase"></i>
+      </div>
+      <div class="control contro-1 active-btn">
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <!-- ================================ END OF NAV ================================ -->
+  
+  <section id="welcome-section">
+    <div class="container">
+      <!-- <div class="social-media">
+        <a href="https://github.com/Momzit" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="http://www.linkedin.com/in/moment-mahlangu" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/_mg_gainz/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div> -->
+      <div class="info">
+        <h1>Welcome to LoopKitchen</h1>
+        <h3>Hello, my name is Sasank</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur eaque reprehenderit ab quasi, totam ea ullam! Dignissimos expedita laboriosam adipisci tempora molestiae voluptatem cupiditate assumenda suscipit perferendis, consequuntur quae.</p>
+        <!-- <a href="#contact" class="btn">Contact me</a> -->
+      </div>
+      <!-- <div class="profile-area">
+        <div class="outer-circle">
+          <i class="fa-brands fa-react"></i>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3"></i>
+          <i class="fa-brands fa-js"></i>
+        </div> -->
+        <!-- <div class="inner-circle">
+          <img src="https://lh3.googleusercontent.com/Z3BUsVWJqVVFXx5donq2R5cTS-VflhI6Kk85d9tnKxS9yV_EVljblyhM5w8yBbQbymEFwLf32IzTfHsMTO7uueLm5Lz0en8G6bvryp3zcDTTHDR_oPNObpzAGKbno5EL-VeVONhrWlxhe8zgTYutFa9h5ep2u01it4F37xzfGInQvh9TVRe5n2TiNmtiDejYfWdGqw2ZPMzboX-HrYvR3GwvMRK_qwqwlr7AFxUwd7xvx7U1i6d5Atimz2K_zS_lh8A9cXuHnkZ0dCnlvWHl-mt6VNFv4fpLSW49a0z1WtLfg_cNg235SNG1ki8BrP40kjSj9W8x1bq4Uo1j54SyXk4Im8nUCtllgPmQ_9ZxM9P7JfpzbZyuvXrKp1ZfTD9YEg2IBfzpjs4Z8yXmIGWkbqBU9OD3bPCwWUZ7yRnqZ-t947PIcuwgawYJM30UluwaMAYwrnpPmLuwiespPUc8n11OS76-G2WZ1eaQtOqt7XYvNZDXBcjITQLfXf7yFhEj-NV8mXtmigmfOnq5EgE23yPjm4L7-yX6_XAjLgqP0VWK-HhkzK9ASIV-2LfrH2g2beS1j5zL7L0fq1tfcmzhiJB8od-2wifh38KVz8-VTN3Z2YWVkoupgCKtY-32eXlrB3dQg8WLQQ69ZCoUau2logduCc5dANRYbcgnyIQC-UodTT9VnxzvLQW48ULNaX62KiZMw2aFCY7c-4Z6YVgaMaCM2JdzlbQhZXoZXQdcW9H07PWNAffaW_b9s4yzV9ZPDgdFQ_rgyYslN9Bc8rvc6FD3ogn7710aAQKw=w256-h186-no?authuser=0" alt="A photo of me">
+        </div> -->
+      </div>
+    </div>
+  </section>
+   <!-- ================================ END OF WELCOME PAGE ================================ -->
+  
+  <section class="about" id="about">
+    <h2 class="title">About</h2>
+    <div class="container">
+      <div class="image">
+        <iframe width="100%" height="50%" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=52.70967533219885, -8.020019531250002&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br />
+      </div>
+      <div class="about-me">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto temporibus odit ullam nulla ipsa, error autem quae sequi natus reiciendis perferendis velit, cupiditate voluptatem sint similique soluta maxime? Dicta ducimus, ipsa dolore cumque voluptatibus molestiae aliquam tempora molestias. Aliquam corporis nisi, rerum vel consequuntur mollitia accusantium quia sed unde provident alias tempora dolorem adipisci repudiandae similique asperiores cumque? Tempore, aliquid aperiam consectetur delectus nam deserunt facilis quis quasi dolor repellendus rerum doloribus inventore ipsum, ullam eveniet unde asperiores quas, error fugiat modi possimus voluptas a distinctio. Ducimus, assumenda repellat. Nesciunt voluptas porro aspernatur non nemo. Odio fugit magnam est autem.</p>
+        <!-- <a href="#" class="btn" download><i class="fa-solid fa-download"></i> Download CV</a> -->
+      </div>
+    </div>
+  </section>
+<!-- ================================ END OF ABOUT SECTION ================================ -->
+
+  <!-- <section class="skills" id="skills">
+    <h2 class="title">Skills</h2>
+    <div class="container">
+      <div class="item">
+      <h3>React</h3>
+      <i class="fa-brands fa-react"></i>
+      <p>
+        <ul>
+          <li>Intermediate</li>
+        </ul>
+      </p>
+    </div>
+    <div class="item">
+      <h3>HTML5</h3>
+      <i class="fa-brands fa-html5"></i>
+      <p>
+        <ul>
+          <li>Proficient</li>
+        </ul>
+      </p>
+    </div>
+    <div class="item">
+      <h3>CSS3</h3>
+      <i class="fa-brands fa-css3"></i>
+      <p>
+        <ul>
+          <li>Proficient</li>
+        </ul>
+      </p>
+    </div>
+    <div class="item">
+      <h3>Python</h3>
+      <i class="fa-brands fa-python"></i>
+      <p>
+        <ul>
+          <li>Proficient</li>
+        </ul>
+      </p>
+    </div>
+    <div class="item">
+      <h3>Git</h3>
+      <i class="fa-brands fa-git-square"></i>
+      <p>
+        <ul>
+          <li>Intermediate</li>
+        </ul>
+      </p>
+    </div>
+    <div class="item">
+      <h3>JavaScript</h3>
+      <i class="fa-brands fa-js"></i>
+      <p>
+        <ul>
+          <li>Begginer</li>
+        </ul>
+      </p>
+    </div>
+   </div>
+  </section> -->
+<!-- ================================ END OF SKILLS SECTION ================================ -->
+
+<section class="services" id="services">
+  <h2 class="title">Services</h2>
+  <div class="container">
+    
+     <div class="service-card">
+      <div class="service-card-content">
+        <div class="service-card-text">
+          <!-- <i class="fa-solid fa-code"></i> -->
+          <i class="fa-solid fa-users"></i>
+          <h4>Lorem</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet tempora eos error beatae</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="service-card">
+      <div class="service-card-content">
+        <div class="service-card-text">
+          <!-- <i class="fa-solid fa-chart-simple"></i> -->
+          <i class="fa-solid fa-circle-user"></i>
+          <h4>lorem</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet tempora eos error beatae</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="service-card">
+      <div class="service-card-content">
+        <div class="service-card-text ">
+          <!-- <i class="fa-solid fa-microchip"></i> -->
+          <i class="fa-solid fa-bookmark"></i>
+          <h4>Lorem</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet tempora eos error beatae</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="service-card">
+      <div class="service-card-content">
+        <div class="service-card-text ">
+          <i class="fa-solid fa-video"></i>
+          <h4>Video Editing</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet tempora eos error beatae</p>
+        </div>
+      </div>
+    </div> -->
+      
+  </div>
+</section>
+<!-- ================================ END OF SERVICES SECTION ================================ -->
+
+<!-- <section class="projects" id="projects">
+  <h3 class="title">Portfolio</h3>
+  <div class="container">
+    <div class="project-tile">
+      <div class="thumbnail">
+        <img src="https://lh3.googleusercontent.com/Z3BUsVWJqVVFXx5donq2R5cTS-VflhI6Kk85d9tnKxS9yV_EVljblyhM5w8yBbQbymEFwLf32IzTfHsMTO7uueLm5Lz0en8G6bvryp3zcDTTHDR_oPNObpzAGKbno5EL-VeVONhrWlxhe8zgTYutFa9h5ep2u01it4F37xzfGInQvh9TVRe5n2TiNmtiDejYfWdGqw2ZPMzboX-HrYvR3GwvMRK_qwqwlr7AFxUwd7xvx7U1i6d5Atimz2K_zS_lh8A9cXuHnkZ0dCnlvWHl-mt6VNFv4fpLSW49a0z1WtLfg_cNg235SNG1ki8BrP40kjSj9W8x1bq4Uo1j54SyXk4Im8nUCtllgPmQ_9ZxM9P7JfpzbZyuvXrKp1ZfTD9YEg2IBfzpjs4Z8yXmIGWkbqBU9OD3bPCwWUZ7yRnqZ-t947PIcuwgawYJM30UluwaMAYwrnpPmLuwiespPUc8n11OS76-G2WZ1eaQtOqt7XYvNZDXBcjITQLfXf7yFhEj-NV8mXtmigmfOnq5EgE23yPjm4L7-yX6_XAjLgqP0VWK-HhkzK9ASIV-2LfrH2g2beS1j5zL7L0fq1tfcmzhiJB8od-2wifh38KVz8-VTN3Z2YWVkoupgCKtY-32eXlrB3dQg8WLQQ69ZCoUau2logduCc5dANRYbcgnyIQC-UodTT9VnxzvLQW48ULNaX62KiZMw2aFCY7c-4Z6YVgaMaCM2JdzlbQhZXoZXQdcW9H07PWNAffaW_b9s4yzV9ZPDgdFQ_rgyYslN9Bc8rvc6FD3ogn7710aAQKw=w256-h186-no?authuser=0" alt="image of the project">
+        <div class="project-title">
+        <h3>Project title here</h3>
+      </div>
+      </div>
+      <div class="action">
+        <h3>Project source</h3>
+        <div class="icons">
+          <a class="icon" href="https://github.com/Momzit/React-landing-page/tree/master" target="_blank" id="profile-link"><i class="fa-brands fa-github"></i></a>
+        <a class="icon" href="https://github.com/Momzit/React-landing-page/tree/master" target="_blank"><i class="fa-solid fa-desktop"></i></a>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="project-tile">
+      <div class="thumbnail">
+        <img src="https://lh3.googleusercontent.com/Z3BUsVWJqVVFXx5donq2R5cTS-VflhI6Kk85d9tnKxS9yV_EVljblyhM5w8yBbQbymEFwLf32IzTfHsMTO7uueLm5Lz0en8G6bvryp3zcDTTHDR_oPNObpzAGKbno5EL-VeVONhrWlxhe8zgTYutFa9h5ep2u01it4F37xzfGInQvh9TVRe5n2TiNmtiDejYfWdGqw2ZPMzboX-HrYvR3GwvMRK_qwqwlr7AFxUwd7xvx7U1i6d5Atimz2K_zS_lh8A9cXuHnkZ0dCnlvWHl-mt6VNFv4fpLSW49a0z1WtLfg_cNg235SNG1ki8BrP40kjSj9W8x1bq4Uo1j54SyXk4Im8nUCtllgPmQ_9ZxM9P7JfpzbZyuvXrKp1ZfTD9YEg2IBfzpjs4Z8yXmIGWkbqBU9OD3bPCwWUZ7yRnqZ-t947PIcuwgawYJM30UluwaMAYwrnpPmLuwiespPUc8n11OS76-G2WZ1eaQtOqt7XYvNZDXBcjITQLfXf7yFhEj-NV8mXtmigmfOnq5EgE23yPjm4L7-yX6_XAjLgqP0VWK-HhkzK9ASIV-2LfrH2g2beS1j5zL7L0fq1tfcmzhiJB8od-2wifh38KVz8-VTN3Z2YWVkoupgCKtY-32eXlrB3dQg8WLQQ69ZCoUau2logduCc5dANRYbcgnyIQC-UodTT9VnxzvLQW48ULNaX62KiZMw2aFCY7c-4Z6YVgaMaCM2JdzlbQhZXoZXQdcW9H07PWNAffaW_b9s4yzV9ZPDgdFQ_rgyYslN9Bc8rvc6FD3ogn7710aAQKw=w256-h186-no?authuser=0" alt="image of the project">
+        <div class="project-title">
+        <h3>Project title here</h3>
+      </div>
+      </div>
+      <div class="action">
+        <h3>Title of the project here</h3>
+        <div class="icons">
+          <a class="icon" href="https://github.com/Momzit/React-landing-page/tree/master" target="_blank" id="profile-link"><i class="fa-brands fa-github"></i></a>
+        <a class="icon" href="https://github.com/Momzit/React-landing-page/tree/master" target="_blank"><i class="fa-solid fa-desktop"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="project-tile">
+      <div class="thumbnail">
+        <img src="https://lh3.googleusercontent.com/Z3BUsVWJqVVFXx5donq2R5cTS-VflhI6Kk85d9tnKxS9yV_EVljblyhM5w8yBbQbymEFwLf32IzTfHsMTO7uueLm5Lz0en8G6bvryp3zcDTTHDR_oPNObpzAGKbno5EL-VeVONhrWlxhe8zgTYutFa9h5ep2u01it4F37xzfGInQvh9TVRe5n2TiNmtiDejYfWdGqw2ZPMzboX-HrYvR3GwvMRK_qwqwlr7AFxUwd7xvx7U1i6d5Atimz2K_zS_lh8A9cXuHnkZ0dCnlvWHl-mt6VNFv4fpLSW49a0z1WtLfg_cNg235SNG1ki8BrP40kjSj9W8x1bq4Uo1j54SyXk4Im8nUCtllgPmQ_9ZxM9P7JfpzbZyuvXrKp1ZfTD9YEg2IBfzpjs4Z8yXmIGWkbqBU9OD3bPCwWUZ7yRnqZ-t947PIcuwgawYJM30UluwaMAYwrnpPmLuwiespPUc8n11OS76-G2WZ1eaQtOqt7XYvNZDXBcjITQLfXf7yFhEj-NV8mXtmigmfOnq5EgE23yPjm4L7-yX6_XAjLgqP0VWK-HhkzK9ASIV-2LfrH2g2beS1j5zL7L0fq1tfcmzhiJB8od-2wifh38KVz8-VTN3Z2YWVkoupgCKtY-32eXlrB3dQg8WLQQ69ZCoUau2logduCc5dANRYbcgnyIQC-UodTT9VnxzvLQW48ULNaX62KiZMw2aFCY7c-4Z6YVgaMaCM2JdzlbQhZXoZXQdcW9H07PWNAffaW_b9s4yzV9ZPDgdFQ_rgyYslN9Bc8rvc6FD3ogn7710aAQKw=w256-h186-no?authuser=0" alt="image of the project">
+        <div class="project-title">
+        <h3>Project title here</h3>
+      </div>
+      </div>
+      <div class="action">
+        <h3>Title of the project here</h3>
+        <div class="icons">
+          <a class="icon" href="https://github.com/Momzit/React-landing-page/tree/master" target="_blank" id="profile-link"><i class="fa-brands fa-github"></i></a>
+        <a class="icon" href="https://github.com/Momzit/React-landing-page/tree/master" target="_blank"><i class="fa-solid fa-desktop"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- ================================ END OF PROJECTS SECTION ================================ -->
+
+<section class="contacts" id="contacts">
+  <h3 class="title">Contacts</h3>
+  <div class="container">
+    <div class="left">
+      <h4>Contact me here</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident odit ut aspernatur, tempore aliquam consectetur voluptates illum modi vero voluptas.</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="icon">
+            <i class="fa-solid fa-location-dot"></i>Location
+          </div>
+          <p>: Johannesburg, South Africa</p>
+        </div>
+        
+        <div class="contact-item">
+          <div class="icon">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+          </div>
+          <p> <span> : mhlvik001@myuct.ac.za </span> </p>
+        </div>
+        
+        <div class="contact-item">
+          <div class="icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Education</span>
+          </div>
+          <p> <span>: University of Cape Town, Cape Town</span></p>
+        </div>
+        
+        <div class="contact-item">
+          <div class="icon">
+            <i class="fa-solid fa-mobile"></i>
+            <span>Mobile number</span>
+          </div>
+          <p> <span>: 0685521369</span></p>
+        </div>
+        
+        <div class="contact-item">
+          <div class="icon">
+            <i class="fa-solid fa-earth-africa"></i>
+            <span>Languages</span>
+          </div>
+          <p> <span>: English, IsiZulu</span></p>
+        </div>
+        <div class="contact-icons">
+        <div class="contact-icon">
+          <a href="https://github.com/Momzit" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="http://www.linkedin.com/in/moment-mahlangu" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/_mg_gainz/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+    <div class="right">
+      <form action="#" class="contact-form">
+        <div class="input-control input-crl">
+          <input type="text" placeholder="Enter your name here..." required>
+          <input type="email" placeholder="Enter your email here..." required>
+        </div>
+        <div class="input-control">
+          <input type="text" placeholder="Enter subject here..." required>
+        </div>
+        <div class="input-control">
+          <textarea name="text-area" id="" cols="15" rows="8" placeholder="Message here..."></textarea>
+        </div>
+        <div class="submit-btn">
+          <a href="#" class="btn" download><i class="fa-solid fa-arrow-up-right-from-square"></i> Send</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<div class="theme-btn">
+  <i class="fa-solid fa-circle-half-stroke"></i>
+</div>
+<!-- ================================ END OF CONTACTS SECTION ================================ -->
+<script src="demo.js"></script>
+</body>
+</html>
