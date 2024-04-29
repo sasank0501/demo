@@ -328,6 +328,7 @@ section.services .container {
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
+  
 }
 
 section.services .service-card {
@@ -335,12 +336,36 @@ section.services .service-card {
   height: 16rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin: 10px 8px;
+  margin: 10px 10px;
   padding: 4px;
   margin-top: 5rem;
   box-shadow: 0 0 0.5rem var(--orange-color);
   transition: all 0.3s ease 0s;
+  overflow: auto;
+  overflow-y: auto;
+  overflow-y: scroll;
 }
+
+/* Customize the scrollbar itself */
+section.services .service-card::-webkit-scrollbar {
+  width: 10px; /* width of the entire scrollbar */
+}
+
+section.services .service-card::-webkit-scrollbar-track {
+  background: #000000; /* color of the track */
+  border-radius: 10px; /* roundness of the track */
+}
+
+section.services .service-card::-webkit-scrollbar-thumb {
+  background: var(--orange-color); /* color of the thumb */
+  border-radius: 10px; /* roundness of the thumb */
+  border: 2px solid #000000; /* border around the thumb */
+}
+
+section.services .service-card::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color of the thumb when hovered */
+}
+
 section.services .service-card:hover {
   box-shadow: 0px 15px 20px #db9833, 0.4, 0px -15px 20px #db9833;
   color: var(--white-color);
