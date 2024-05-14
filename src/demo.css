@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #191d2b;
+  --primary-color: #ffe9e9 ;
   --secondary-color: #adb5bd;
   --dark-color: #607d8b;
   --light-color: #7e9a9a;
-  --white-color: #FFFFFF;
-  --orange-color: #db9833;
+  --white-color: #000000;
+  --orange-color: #cf7b7d;
   --Poppins-font: 'Poppins', sans-serif;
   --Nunito-font: 'Nunito Sans', sans-serif;
   --Beau-font: 'Beau Rivage', cursive;
@@ -26,7 +26,7 @@
   --dark-color: #607d8b;
   --light-color: #00FFCC;
   --white-color: black;
-  --orange-color: #db9833;
+  --orange-color: #cf7b7d;
 }
 body {
   background-color: var(--primary-color);
@@ -49,8 +49,8 @@ body {
 }
 
 .btn:hover {
-  background-color: #db9833;
-  box-shadow: 0px 15px 20px #db9833;
+  background-color: #cf7b7d;
+  box-shadow: 0px 15px 20px #cf7b7d;
   color: #fff;
   transform: translateY(-7px);
 }
@@ -127,7 +127,7 @@ nav ul div.container a {
 }
 nav ul div.container a:hover{
   background-color: var(--primary-color);
-  color: #db9833;
+  color: #cf7b7d;
 }
 
 nav ul .search-icon{
@@ -260,7 +260,7 @@ nav .container ul li a.hover {
 }
 
 .about .title::after {
-  content: "Find your fav hotel";
+  content: "Get to know me";
   bottom: -12px;
   position: absolute;
   left: 50%;
@@ -273,19 +273,115 @@ nav .container ul li a.hover {
 
 section.about .container {
   display: grid;
-  grid-template-columns: 38rem auto;
+  grid-template-columns: 26rem auto;
   gap: 2rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  padding-bottom: 4%;
 }
 
+section.about .container .image {
+  box-shadow: 0 0 0.5rem var(--orange-color);
+}
+
+section.about .container .about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 section.about .container .about-me .btn {
   width: 22%;
 }
 
 /*================ END OF ABOUT SECTION ================ */
+
+/*================ SKILLS SECTION ================ */
+#skills {
+  height: 100vh;
+  margin-bottom: 25rem;
+}
+
+.skills .title {
+  text-align: center;
+  position: relative;
+  padding: 0.6rem 0;
+}
+
+.skills .title::before,
+.skills .title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skills .title::before {
+  background: var(--white-color);
+  width: 12rem;
+  height: 0.19rem;
+  bottom: 0px;
+}
+
+.skills .title::after {
+  content: "What I can do";
+  color: var(--orange-color);
+  background: var(--primary-color);
+  padding: 0.2rem;
+  font-size: 0.9rem;
+  bottom: -12px;
+}
+
+section.skills .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+section.skills .container .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+}
+
+section.skills .container .item i {
+  font-size: 10rem;
+}
+
+section.skills .container .item h3 {
+  color: var(--orange-color);
+}
+
+button.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.icon-btn:hover {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+button.icon-btn i {
+  color: var(--white-color);  /* Change color of icon if needed */
+  transition: color 0.5s ease;
+}
+
+button.icon-btn:hover i {
+  color: var(--orange-color);
+}
+
+
+
 
 
 
@@ -367,7 +463,7 @@ section.services .service-card::-webkit-scrollbar-thumb:hover {
 }
 
 section.services .service-card:hover {
-  box-shadow: 0px 15px 20px #db9833, 0.4, 0px -15px 20px #db9833;
+  box-shadow: 0px 15px 20px #cf7b7d, 0.4, 0px -15px 20px #cf7b7d;
   color: var(--white-color);
   transform: scale(1.1);
 }
@@ -427,7 +523,7 @@ section.services .service-card .service-card-content {
 }
 
 .contacts .title::after {
-  content: "Where to find us";
+  content: "To reach me";
   bottom: -12px;
   position: absolute;
   left: 50%;
@@ -507,8 +603,8 @@ section.contacts .container .left .contact-info .contact-icon a i {
 }
 
 section.contacts .container .left .contact-info .contact-icon a:hover {
-  background-color: #db9833;
-  box-shadow: 0px 15px 20px #db9833;
+  background-color: #cf7b7d;
+  box-shadow: 0px 15px 20px #cf7b7d;
   color: #fff;
   transform: translateY(-6px);
 }
